@@ -1,0 +1,362 @@
+.doctors__choose-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 40px;
+
+    & h2{
+        margin-bottom: 20px;
+    }
+}
+
+.choose__block{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.choose__card{
+    background-color: transparent;
+    border: 1px solid var(--main-blue);
+    color: var(--main-blue);
+    padding: 4px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s;
+
+    &:first-child{
+        background-color: var(--main-blue);
+        color: #fff;
+    }
+
+    &:hover{
+        border-color: var(--main-text);
+        color: var(--main-text);
+    }
+}
+
+.doctors__search{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border: 1px solid var(--main-blue);
+    padding: 4px 10px;
+    width: 320px;
+    border-radius: 8px;
+
+    & svg{
+        cursor: pointer;
+    }
+
+    & input{
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        padding-block: 5px;
+
+        &::placeholder{
+            color: var(--main-blue);
+        }
+
+        &:focus{
+            outline: none;
+            color: var(--main-text);
+        }
+    }
+}
+
+.doctors__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
+.doctor__card{
+    box-shadow: 0 5px 6px 0 var(--shadow);
+    padding-right: 12px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+}
+
+.doctor__card-info-block{
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 15px;
+}
+
+.doctor__card-image{
+    width: 119px;
+    height: 120px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.doctor__card-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: var(--main-text);
+    font-weight: 600;
+
+    & span{
+        font-size: 18px;
+    }
+}
+
+.doctor__card-info-dop{
+    display: flex;
+    flex-direction: column;
+
+    & div{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.doctor__card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 12px;
+}
+
+.dop__stroke{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    & p{
+        font-size: 12px;
+    }
+
+    & svg{
+        margin-right: 5px;
+    }
+
+    & img{
+        width: 18px;
+    }
+}
+
+.doctor__card-bottom{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    padding-left: 12px;
+}
+
+.review__stars{
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    margin-top: 8px;
+
+    & p{
+        margin-left: 8px;
+        color: var(--main-blue);
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    & img{
+        width: 14px;
+    }
+}
+
+.doctor__card-button{
+    width: 100%;
+    padding-block: 5px;
+    margin-top: 5px;
+    background-color: transparent;
+    border: 1px solid var(--main-blue);
+    color: var(--main-blue);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover{
+        background-color: var(--main-blue);
+        color: #fff;
+    }
+}
+
+.doctors__pagination{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.doctors__pagination-wrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    & span{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background-color: transparent;
+        border-radius: 50px;
+    }
+}
+
+.first__pag{
+    background-color: var(--main-blue) !important;
+    color: #fff;
+}
+
+.pagination__button{
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--main-blue);
+
+    & p{
+        font-size: 14px;
+        margin-bottom: 1px;
+    }
+}
+
+.pagination__icon{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+@media(max-width: 1000px){
+    .doctors__choose-wrapper{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .doctors__search{
+        width: 500px;
+    }
+}
+
+@media(max-width: 700px){
+    .doctors__search{
+        width: 100%;
+    }
+}
+
+@media(max-width: 620px){
+    .choose__card{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 565px){
+    .doctor__card-bottom{
+        flex-direction: column;
+        align-items: start;
+        row-gap: 5px;
+    }
+
+    .doctor__card-info-block{
+        margin-bottom: 5px;
+    }
+
+    .doctors__pagination-wrapper{
+        column-gap: 0px;
+    }
+
+    .pagination__button{
+        padding-inline: 10px;
+    }
+}
+
+@media(max-width: 475px){
+    .choose__block{
+        column-gap: 5px;
+    }
+
+    .choose__card{
+        font-size: 10px;
+        padding: 2px 8px;
+    }
+
+    .doctors__search{
+        padding: 2px 10px;
+    }
+
+    .dop__stroke{
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+
+        & p{
+            font-size: 10px;
+        }
+
+        & p:last-child{
+            max-width: 150px;
+            line-height: 15px;
+        }
+
+        & svg{
+            margin-right: 5px;
+        }
+
+        & img{
+            width: 15px;
+        }
+    }
+
+    .dop__stroke:last-child{
+        align-items: start;
+    }
+
+    .doctor__card-info-dop{
+        row-gap: 10px;
+    }
+
+    .doctor__card-info{
+        padding-top: 5px;
+    }
+
+    .doctor__card-title{
+        margin-bottom: 8px;
+    }
+
+    .doctor__card-image{
+        width: 100px;
+        height: 100px;
+    }
+
+    .doctor__card-info-block{
+        column-gap: 10px;
+    }
+
+    .doctors__wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .doctors__pagination-wrapper{
+        & span{
+            font-size: 12px;
+        }
+    }
+
+    .pagination__button{
+        padding-inline: 10px;
+
+        & p{
+            font-size: 12px;
+        }
+    }
+}

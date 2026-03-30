@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRMedical</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile__form.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container wrapper">
+            <div class="header__logos">
+                <span class="main__logo">CRMedical</span>
+                <hr />
+                <div class="second__logo-block">
+                    <img src="./images/company__logo.png" alt="logo" class="second__logo-image" />
+                    <h2 class="second__logo">Ultraline</h2>
+                </div>
+            </div>
+            <div class="header__info">
+                <p class="header__contact">+7 777 777 77 77</p>
+                <div class="header__language">
+                    <span>RU</span>
+                    <hr />
+                    <span>KZ</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <button class="back__button">
+            <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" class="back__icon" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#3B4D5B"/>
+            </svg>
+            <p>назад</p>
+        </button>
+    </div>
+
+    <main>
+        <div class="container form__page-wrapper">
+            <div class="form__block">
+                <h2 class="form__title">Запись</h2>
+                <form class="form__block-form">
+                    <label class="visibility__hidden" for="name">Имя</label>
+                    <input type="text" placeholder="Имя">
+                    <label class="visibility__hidden" for="name">Фамилия</label>
+                    <input type="text" placeholder="Фамилия">
+                    <label class="visibility__hidden" for="name">Отчество</label>
+                    <input type="text" placeholder="Отчество">
+                    <div class="form__input-number">
+                        <label class="visibility__hidden" for="name">Телефон</label>
+                        <span>+7</span>
+                        <input class="form__input-number" type="text" placeholder="XXX XXX XX XX">
+                    </div>
+                    <label class="visibility__hidden" for="name">Коментарий</label>
+                    <input type="text" placeholder="Коментарий">
+                    <div class="form__select-block">
+                        <select class="form__select">
+                            <option value="" selected disabled>Алергии</option>
+                            <option value="yes">Да</option>
+                            <option value="no">Нет</option>
+                        </select>
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#3B4D5B"/>
+                        </svg>
+                    </div>
+                    <div class="agree__block">
+                        <input type="checkbox" class="agree__checkbox" />
+                        <a class="agree__text">Я даю согласие на сбор, обработку и хранение данных</a>
+                    </div>
+                    <button type="submit" class="form__button">Записаться</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

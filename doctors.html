@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRMedical Doctors</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/doctors.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container wrapper">
+            <div class="header__logos">
+                <span class="main__logo">CRMedical</span>
+                <hr />
+                <div class="second__logo-block">
+                    <img src="./images/company__logo.png" alt="logo" class="second__logo-image" />
+                    <h2 class="second__logo">Ultraline</h2>
+                </div>
+            </div>
+            <div class="header__info">
+                <p class="header__contact">+7 777 777 77 77</p>
+                <div class="header__language">
+                    <span>RU</span>
+                    <hr />
+                    <span>KZ</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <button class="back__button">
+            <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" class="back__icon" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#3B4D5B"/>
+            </svg>
+            <p>назад</p>
+        </button>
+    </div>
+
+    <main>
+        <div class="doctors__choose">
+            <div class="container doctors__choose-wrapper">
+                <div>
+                    <h2 class="title">Врачи клиники</h2>
+                    <div class="choose__block">
+                        <div class="choose__card">Все</div>
+                        <div class="choose__card">Терапевт</div>
+                        <div class="choose__card">ЛОР</div>
+                        <div class="choose__card">Кардиолог</div>
+                        <div class="choose__card">Педиатор</div>
+                    </div>
+                </div>
+
+                <div class="doctors__search">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.7419 10.3421C12.7102 9.02083 13.1439 7.38264 12.9562 5.7553C12.7685 4.12796 11.9733 2.63149 10.7297 1.56528C9.48604 0.499068 7.88567 -0.0582491 6.24876 0.00482408C4.61184 0.0678972 3.05911 0.746709 1.90119 1.90545C0.743273 3.0642 0.0655718 4.61742 0.00366997 6.25438C-0.0582319 7.89134 0.500231 9.49131 1.56733 10.7342C2.63443 11.9771 4.13147 12.7712 5.75894 12.9577C7.38641 13.1442 9.0243 12.7094 10.3449 11.7401H10.3439C10.3733 11.7801 10.4059 11.8185 10.4419 11.8551L14.2919 15.7051C14.4794 15.8928 14.7338 15.9983 14.9991 15.9983C15.2643 15.9984 15.5188 15.8932 15.7064 15.7056C15.8941 15.5181 15.9995 15.2638 15.9996 14.9985C15.9997 14.7332 15.8944 14.4788 15.7069 14.2911L11.8569 10.4411C11.8212 10.4049 11.7827 10.3725 11.7419 10.3421ZM11.9999 6.49815C11.9999 7.22042 11.8577 7.93562 11.5813 8.60291C11.3049 9.2702 10.8997 9.87651 10.389 10.3872C9.87829 10.898 9.27197 11.3031 8.60468 11.5795C7.93739 11.8559 7.22219 11.9981 6.49992 11.9981C5.77765 11.9981 5.06245 11.8559 4.39516 11.5795C3.72787 11.3031 3.12156 10.898 2.61083 10.3872C2.10011 9.87651 1.69498 9.2702 1.41858 8.60291C1.14218 7.93562 0.999921 7.22042 0.999921 6.49815C0.999921 5.03946 1.57938 3.64051 2.61083 2.60906C3.64228 1.57761 5.04123 0.998147 6.49992 0.998147C7.95861 0.998147 9.35756 1.57761 10.389 2.60906C11.4205 3.64051 11.9999 5.03946 11.9999 6.49815Z" fill="#00B8C8"/>
+                    </svg>
+                    <input type="text" placeholder="search" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container doctors__wrapper">
+            <div class="doctor__card">
+                <div class="doctor__card-info-block">
+                    <img 
+                        src="images/doctor__image.png" 
+                        alt="doctor image" 
+                        class="doctor__card-image"
+                    />
+                    <div class="doctor__card-info">
+                        <h3 class="doctor__card-title">
+                            <span>Беков</span><br />Рустем Алмасович
+                        </h3>
+                        <div class="doctor__card-info-dop">
+                            <div class="dop__stroke">
+                                <img src="images/check-circle.svg" alt="" />
+                                <p class="text">Стаж 6 лет</p>
+                            </div>
+                            <div class="dop__stroke">
+                                <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#00B8C8"/>
+                                </svg>
+                                <p class="text">Терапия хронических заболиваний</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor__card-bottom">
+                    <div class="review__stars">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/empty__star.svg" alt="">
+                        <p>4</p>
+                    </div>
+                    <button class="doctor__card-button">Подробнее</button>
+                </div>
+            </div>
+            <div class="doctor__card">
+                <div class="doctor__card-info-block">
+                    <img 
+                        src="images/doctor__image.png" 
+                        alt="doctor image" 
+                        class="doctor__card-image"
+                    />
+                    <div class="doctor__card-info">
+                        <h3 class="doctor__card-title">
+                            <span>Беков</span><br />Рустем Алмасович
+                        </h3>
+                        <div class="doctor__card-info-dop">
+                            <div class="dop__stroke">
+                                <img src="images/check-circle.svg" alt="" />
+                                <p class="text">Стаж 6 лет</p>
+                            </div>
+                            <div class="dop__stroke">
+                                <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#00B8C8"/>
+                                </svg>
+                                <p class="text">Терапия хронических заболиваний</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor__card-bottom">
+                    <div class="review__stars">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/empty__star.svg" alt="">
+                        <p>4</p>
+                    </div>
+                    <button class="doctor__card-button">Подробнее</button>
+                </div>
+            </div>
+            <div class="doctor__card">
+                <div class="doctor__card-info-block">
+                    <img 
+                        src="images/doctor__image.png" 
+                        alt="doctor image" 
+                        class="doctor__card-image"
+                    />
+                    <div class="doctor__card-info">
+                        <h3 class="doctor__card-title">
+                            <span>Беков</span><br />Рустем Алмасович
+                        </h3>
+                        <div class="doctor__card-info-dop">
+                            <div class="dop__stroke">
+                                <img src="images/check-circle.svg" alt="" />
+                                <p class="text">Стаж 6 лет</p>
+                            </div>
+                            <div class="dop__stroke">
+                                <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#00B8C8"/>
+                                </svg>
+                                <p class="text">Терапия хронических заболиваний</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor__card-bottom">
+                    <div class="review__stars">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/empty__star.svg" alt="">
+                        <p>4</p>
+                    </div>
+                    <button class="doctor__card-button">Подробнее</button>
+                </div>
+            </div>
+            <div class="doctor__card">
+                <div class="doctor__card-info-block">
+                    <img 
+                        src="images/doctor__image.png" 
+                        alt="doctor image" 
+                        class="doctor__card-image"
+                    />
+                    <div class="doctor__card-info">
+                        <h3 class="doctor__card-title">
+                            <span>Беков</span><br />Рустем Алмасович
+                        </h3>
+                        <div class="doctor__card-info-dop">
+                            <div class="dop__stroke">
+                                <img src="images/check-circle.svg" alt="" />
+                                <p class="text">Стаж 6 лет</p>
+                            </div>
+                            <div class="dop__stroke">
+                                <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#00B8C8"/>
+                                </svg>
+                                <p class="text">Терапия хронических заболиваний</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor__card-bottom">
+                    <div class="review__stars">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/empty__star.svg" alt="">
+                        <p>4</p>
+                    </div>
+                    <button class="doctor__card-button">Подробнее</button>
+                </div>
+            </div>
+            <div class="doctor__card">
+                <div class="doctor__card-info-block">
+                    <img 
+                        src="images/doctor__image.png" 
+                        alt="doctor image" 
+                        class="doctor__card-image"
+                    />
+                    <div class="doctor__card-info">
+                        <h3 class="doctor__card-title">
+                            <span>Беков</span><br />Рустем Алмасович
+                        </h3>
+                        <div class="doctor__card-info-dop">
+                            <div class="dop__stroke">
+                                <img src="images/check-circle.svg" alt="" />
+                                <p class="text">Стаж 6 лет</p>
+                            </div>
+                            <div class="dop__stroke">
+                                <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#00B8C8"/>
+                                </svg>
+                                <p class="text">Терапия хронических заболиваний</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor__card-bottom">
+                    <div class="review__stars">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/empty__star.svg" alt="">
+                        <p>4</p>
+                    </div>
+                    <button class="doctor__card-button">Подробнее</button>
+                </div>
+            </div>
+            <div class="doctor__card">
+                <div class="doctor__card-info-block">
+                    <img 
+                        src="images/doctor__image.png" 
+                        alt="doctor image" 
+                        class="doctor__card-image"
+                    />
+                    <div class="doctor__card-info">
+                        <h3 class="doctor__card-title">
+                            <span>Беков</span><br />Рустем Алмасович
+                        </h3>
+                        <div class="doctor__card-info-dop">
+                            <div class="dop__stroke">
+                                <img src="images/check-circle.svg" alt="" />
+                                <p class="text">Стаж 6 лет</p>
+                            </div>
+                            <div class="dop__stroke">
+                                <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#00B8C8"/>
+                                </svg>
+                                <p class="text">Терапия хронических заболиваний</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor__card-bottom">
+                    <div class="review__stars">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/empty__star.svg" alt="">
+                        <p>4</p>
+                    </div>
+                    <button class="doctor__card-button">Подробнее</button>
+                </div>
+            </div>
+            <div class="doctor__card">
+                <div class="doctor__card-info-block">
+                    <img 
+                        src="images/doctor__image.png" 
+                        alt="doctor image" 
+                        class="doctor__card-image"
+                    />
+                    <div class="doctor__card-info">
+                        <h3 class="doctor__card-title">
+                            <span>Беков</span><br />Рустем Алмасович
+                        </h3>
+                        <div class="doctor__card-info-dop">
+                            <div class="dop__stroke">
+                                <img src="images/check-circle.svg" alt="" />
+                                <p class="text">Стаж 6 лет</p>
+                            </div>
+                            <div class="dop__stroke">
+                                <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#00B8C8"/>
+                                </svg>
+                                <p class="text">Терапия хронических заболиваний</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor__card-bottom">
+                    <div class="review__stars">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/empty__star.svg" alt="">
+                        <p>4</p>
+                    </div>
+                    <button class="doctor__card-button">Подробнее</button>
+                </div>
+            </div>
+            <div class="doctor__card">
+                <div class="doctor__card-info-block">
+                    <img 
+                        src="images/doctor__image.png" 
+                        alt="doctor image" 
+                        class="doctor__card-image"
+                    />
+                    <div class="doctor__card-info">
+                        <h3 class="doctor__card-title">
+                            <span>Беков</span><br />Рустем Алмасович
+                        </h3>
+                        <div class="doctor__card-info-dop">
+                            <div class="dop__stroke">
+                                <img src="images/check-circle.svg" alt="" />
+                                <p class="text">Стаж 6 лет</p>
+                            </div>
+                            <div class="dop__stroke">
+                                <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#00B8C8"/>
+                                </svg>
+                                <p class="text">Терапия хронических заболиваний</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor__card-bottom">
+                    <div class="review__stars">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/full__star.svg" alt="">
+                        <img src="images/empty__star.svg" alt="">
+                        <p>4</p>
+                    </div>
+                    <button class="doctor__card-button">Подробнее</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="doctors__pagination">
+            <div class="doctors__pagination-wrapper">
+                <button class="pagination__button">
+                    <svg width="10" height="14" viewBox="0 0 8 12" class="pagination__icon" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#00B8C8"/>
+                    </svg>
+                    <p>Назад</p>
+                </button>
+
+                <span class="first__pag">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+
+                <button class="pagination__button">
+                    <p>Вперед</p>
+                    <svg width="10" height="14" viewBox="0 0 8 12" fill="#3B4D5B" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.97297 6L0 1.4L1.51351 0L8 6L1.51351 12L0 10.6L4.97297 6Z" fill="#00B8C8"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <span class="footer__logo">CRMedical</span>
+            <hr />
+            <p class="text">Политика конфиденциальности</p>
+        </div>
+    </footer>
+</body>
+</html>
